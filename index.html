@@ -1,29 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                btn: '#abef5f',
-                btnLight: '#d4f6ae',
-                card1: '#e7c1d3',
-                card2: '#efda6e',
-                card3: '#a4dac3',
-                card4: '#77aaea',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        bgColor: '#f7f7f7',
+                        btn: '#abef5f',
+                        btnLight: '#d4f6ae',
+                        card1: '#e7c1d3',
+                        card2: '#efda6e',
+                        card3: '#a4dac3',
+                        card4: '#77aaea',
+                    },
+                    fontFamily: {
+                        manrope: "Manrope",
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <title>Rinterio</title>
 </head>
-<body>
-    
+
+<body class="font-manrope bg-bgColor w-full">
+    <header class="w-[90%] min-h-screen mx-auto py-4 md:py-8">
+        <nav class="flex justify-between items-center w-full">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-arrow-right -rotate-45 bg-btn rounded-full p-2 text-black"></i>
+                <p class="font-extrabold text-lg">Rinterio</p>
+            </div>
+            <div class="hidden lg:block">
+                <ul class="flex items-center gap-5 text-gray-500 text-sm">
+                    <li class="font-extrabold cursor-pointer hover:text-gray-900">Home</li>
+                    <li class="cursor-pointer hover:text-gray-900">Service</li>
+                    <li class="cursor-pointer hover:text-gray-900">Portfolio</li>
+                    <li class="cursor-pointer hover:text-gray-900">Services</li>
+                    <li class="cursor-pointer hover:text-gray-900">Contact Us</li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6 max-sm:hidden">
+                <div class="bg-white w-9 h-9 flex justify-center items-center rounded-full shadow-lg cursor-pointer"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="bg-white w-9 h-9 flex justify-center items-center rounded-full shadow-lg cursor-pointer"><i class="fa-solid fa-cart-shopping"></i></div>
+                <div><button class="border-none px-3 py-1 rounded-full flex items-center gap-3 bg-btn text-sm font-extrabold">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-full p-2 text-white"></i></button></div>
+            </div>
+            <div class="block md:hidden">
+                <i class="fa-solid fa-bars cursor-pointer"></i>
+            </div>
+        </nav>
+    </header>
 </body>
+
 </html>
