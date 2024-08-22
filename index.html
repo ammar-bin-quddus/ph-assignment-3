@@ -11,7 +11,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        bgColor: '#f7f7f7',
+                        bgColor: '#f4f4f4',
+                        content: '#fefefe',
                         btn: '#abef5f',
                         btnLight: '#d4f6ae',
                         card1: '#e7c1d3',
@@ -33,56 +34,106 @@
     <title>Rinterio</title>
 </head>
 
-<body class="font-manrope bg-bgColor w-full">
-    <header class="w-[90%] min-h-screen mx-auto py-4 md:py-8">
-        <nav class="flex justify-between items-center w-full">
-            <div class="flex items-center gap-2">
-                <i class="fa-solid fa-arrow-right -rotate-45 
+<!-- bg-btn circle = <i class="fa-solid fa-arrow-right -rotate-45 
+                          bg-btn rounded-full p-2 text-black"></i> -->
+
+<!-- bg-black circle = <i class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-full p-2 text-white"></i> -->
+
+
+
+<body class="font-manrope w-full">
+    <header class="w-full min-h-screen py-4 md:py-8 bg-content">
+        <div class="w-[90%] h-full mx-auto">
+            <nav class="flex justify-between items-center w-full">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-arrow-right -rotate-45 
                           bg-btn rounded-full p-2 text-black"></i>
-                <p class="font-extrabold text-lg">Rinterio</p>
-            </div>
-            <div class="hidden lg:block">
-                <ul class="flex items-center gap-5 text-gray-500 text-sm">
-                    <li class="font-extrabold cursor-pointer hover:text-gray-900">Home</li>
-                    <li class="cursor-pointer hover:text-gray-900">Service</li>
-                    <li class="cursor-pointer hover:text-gray-900">Portfolio</li>
-                    <li class="cursor-pointer hover:text-gray-900">Services</li>
-                    <li class="cursor-pointer hover:text-gray-900">Contact Us</li>
-                </ul>
-            </div>
-            <div class="flex items-center gap-6 max-sm:hidden">
-                <div class="bg-white w-9 h-9 flex justify-center items-center 
-                              rounded-full shadow-lg cursor-pointer">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <p class="font-extrabold text-lg">Rinterio</p>
                 </div>
-                <div class="bg-white w-9 h-9 flex justify-center items-center 
-                              rounded-full shadow-lg cursor-pointer">
-                    <i class="fa-solid fa-cart-shopping"></i>
+                <div class="hidden lg:block">
+                    <ul class="flex items-center gap-5 text-gray-500 text-sm">
+                        <li class="font-extrabold cursor-pointer hover:text-gray-900">Home</li>
+                        <li class="cursor-pointer hover:text-gray-900">Service</li>
+                        <li class="cursor-pointer hover:text-gray-900">Portfolio</li>
+                        <li class="cursor-pointer hover:text-gray-900">Services</li>
+                        <li class="cursor-pointer hover:text-gray-900">Contact Us</li>
+                    </ul>
                 </div>
-                <div>
-                    <button class="border-none px-3 py-1 rounded-full flex items-center 
+                <div class="flex items-center gap-6 max-sm:hidden">
+                    <div class="bg-white w-9 h-9 flex justify-center items-center 
+                              rounded-full shadow-lg cursor-pointer">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="bg-white w-9 h-9 flex justify-center items-center 
+                              rounded-full shadow-lg cursor-pointer">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div>
+                        <button class="border-none px-3 py-1 rounded-full flex items-center 
                                     gap-3 bg-btn text-sm font-extrabold">Book Consult <i
-                            class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-full p-2 text-white"></i>
-                    </button>
+                                class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-full p-2 text-white"></i>
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <div class="block md:hidden">
-                <i class="fa-solid fa-bars cursor-pointer"></i>
-            </div>
-        </nav>
-        <div class="w-full flex flex-col justify-center items-center gap-5 text-center">
-            <div><img src="./assets/banner.png" alt="banner"></div>
-            <p class="text-2xl md:text-3xl lg:text-4xl font-bold">A barn house of this design has a <br> striking
-                appearance</p>
-            <p class="text-gray-700 text-sm md:w-2/3">The barn house captivates with its blend of rustic charm and
-                modern sophistication, featuring weathered
-                wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-            <button class="border-none px-3 py-1 rounded-full flex items-center 
+                <div class="md:hidden bg-white w-9 h-9 flex justify-center items-center 
+                            rounded-full shadow-lg cursor-pointer">
+                    <i class="fa-solid fa-bars cursor-pointer"></i>
+                </div>
+            </nav>
+            <div class="w-full flex flex-col justify-center items-center gap-5 text-center">
+                <div><img src="./assets/banner.png" alt="banner"></div>
+                <p class="text-2xl md:text-3xl lg:text-4xl font-bold">A barn house of this design has a <br> striking
+                    appearance</p>
+                <p class="text-gray-700 text-sm md:w-2/3">The barn house captivates with its blend of rustic charm and
+                    modern sophistication, featuring weathered
+                    wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                <button class="border-none max-sm:w-[80%] max-sm:gap-5 px-3 py-1 rounded-full flex justify-center items-center 
                            gap-3 bg-btnLight text-sm font-extrabold">View Details <i
-                    class="fa-solid fa-arrow-right -rotate-45 bg-btn rounded-full p-2 text-black"></i>
-            </button>
+                        class="fa-solid fa-arrow-right -rotate-45 bg-btn rounded-full p-2 text-black"></i>
+                </button>
+            </div>
         </div>
     </header>
+    <main class="w-full bg-bgColor">
+        <section
+            class="relative w-[90%] mx-auto py-9 min-h-screen lg:h-[100vh] md:mt-9 flex 
+                   max-lg:flex-col max-sm:text-center md:text-center md:items-center lg:text-left lg:flex-row gap-6">
+            <div class="absolute top-8 left-0 hidden lg:block w-20 h-10">
+                <img src="./assets/Vector.png" alt="vector">
+            </div>
+            <div class="lg:w-1/2 flex flex-col justify-center max-lg:items-center max-lg:text-center gap-6">
+                <button
+                    class="bg-content px-4 py-2 rounded-full flex justify-center items-center gap-2 
+                           font-bold w-[30%] md:w-[20%] lg:w-[30%] max-sm:w-[65%] max-sm:gap-3"><i
+                        class="fa-solid fa-arrow-right"></i> About Us</button>
+                <p class="text-3xl md:text-4xl font-extrabold">We design thoughtful, <br> liveable spaces</p>
+                <p class="text-sm text-gray-500">The barn house captivates with its blend of rustic charm and
+                    modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                <div class="flex flex-col md:flex-row lg:flex-col gap-5 text-left">
+                    <div class="w-full flex items-center gap-5 bg-content px-4 py-5 rounded-lg shadow-md">
+                        <img src="./assets/commercial.png" alt="commercial">
+                        <div>
+                            <p class="font-bold">Commercial</p>
+                            <p class="text-sm text-gray-500">The barn house captivates with its blend of rustic charm
+                                and modern.</p>
+                        </div>
+                    </div>
+                    <div class="w-full flex items-center gap-5 bg-content px-4 py-5 rounded-lg shadow-md">
+                        <img src="./assets/residential.png" alt="residential">
+                        <div>
+                            <p class="font-bold">Commercial</p>
+                            <p class="text-sm text-gray-500">The barn house captivates with its blend of rustic charm
+                                and modern.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/2 w-full h-full sm:h-[100vh] flex justify-center items-center">
+                <img class="w-full max-md:w-full max-lg:w-[80%] max-sm:h-full sm:h-[80%] lg:h-[78.5%] mx-auto"
+                    src="./assets/Rectangle.png" alt="rect">
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
