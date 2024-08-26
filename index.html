@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -55,7 +54,7 @@
                         <li class="font-extrabold cursor-pointer hover:text-gray-900">Home</li>
                         <li class="cursor-pointer hover:text-gray-900">Service</li>
                         <li class="cursor-pointer hover:text-gray-900">Portfolio</li>
-                        <li class="cursor-pointer hover:text-gray-900">Services</li>
+                        <li class="cursor-pointer hover:text-gray-900">Blogs</li>
                         <li class="cursor-pointer hover:text-gray-900">Contact Us</li>
                     </ul>
                 </div>
@@ -75,7 +74,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="md:hidden bg-white w-9 h-9 flex justify-center items-center 
+                <div class="lg:hidden bg-white w-9 h-9 flex justify-center items-center 
                             rounded-full shadow-lg cursor-pointer">
                     <i class="fa-solid fa-bars cursor-pointer"></i>
                 </div>
@@ -195,7 +194,7 @@
                     <img class="max-sm:w-full sm:w-full h-full" src="./assets/img2.png" alt="">
                 </div>
                 <div
-                    class="rounded-xl order-3 sm:order-5 md:order-3 sm:col-span-2 md:col-span-2 w-full h-full sm:w-full sm:h-full border border-2 p-3">
+                    class="rounded-xl order-3 max-sm:order-5 sm:order-5 md:order-3 sm:col-span-2 md:col-span-2 w-full h-full sm:w-full sm:h-full border border-2 p-3">
                     <img class="max-sm:w-full sm:w-full h-full" src="./assets/img3.png" alt="">
                 </div>
                 <div class="rounded-xl order-4 sm:col-span-4 md:col-span-4 w-full h-full sm:w-full sm:h-full flex 
@@ -224,50 +223,67 @@
         <section class="w-[90%] mx-auto py-9 space-y-5">
             <div class="w-full flex flex-col justify-center items-center text-center gap-6">
                 <button class="bg-content px-4 py-2 rounded-full flex justify-center items-center gap-2 
-                           font-bold max-sm:w-[90%] sm:w-[55%] md:w-[45%] lg:w-[33%] max-sm:gap-3 sm:gap-5"><i
+                           font-bold max-sm:w-[100%] sm:w-[55%] md:w-[45%] lg:w-[33%] max-sm:gap-3 sm:gap-5"><i
                         class="fa-solid fa-arrow-right"></i> Explore our upcoming works</button>
                 <p class="text-3xl md:text-4xl font-extrabold">Our upcoming Projects</p>
                 <p class="text-sm text-gray-500">The barn house captivates with its blend of rustic charm and
                     modern sophistication, featuring weathered wood, sleek metal accents.</p>
             </div>
-            <div class="w-full md:h-[100vh] max-md:h-[220vh] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:items-center">
-                <div class="w-full h-full md:h-[70%] relative"> 
-                    <div class="w-full h-full md:h-full absolute z-1 bg-black"><video class="w-full h-full md:h-full" src="./assets/video1.mp4" autoplay loop muted></video></div>
-                    <div class="w-full h-full md:h-full absolute z-2 hover:opacity-0 transition-opacity">
+            <div
+                class="w-full md:h-[100vh] max-md:h-[220vh] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:items-center">
+                <div class="w-full h-full md:h-[70%] relative rounded-lg">
+                    <div class="w-full h-full md:h-full absolute z-1 bg-black rounded-lg"><video
+                            class="w-full h-full md:h-full" src="./assets/video1.mp4" autoplay loop muted></video></div>
+                    <div
+                        class="w-full h-full md:h-full absolute z-2 hover:opacity-0 transition-opacity rounded-lg overflow-hidden">
                         <img class="w-full h-full md:h-full" src="./assets/special1.jpg" alt="">
                     </div>
                     <div class="absolute max-md:bottom-2 bottom-3 left-3 text-white font-extrabold w-full z-3">
-                        <p class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-yellow-400"></i> Chittagong</p>
+                        <p class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-yellow-400"></i>
+                            Chittagong</p>
                     </div>
                 </div>
-                <div class="w-full h-full md:h-[70%] relative"> 
-                    <div class="w-full h-full md:h-full absolute z-1 bg-black"><video class="w-full h-full md:h-full" src="./assets/video2.mp4" autoplay loop muted></video></div>
-                    <div class="w-full h-full md:h-full absolute z-2 hover:opacity-0 transition-opacity">
+                <div class="w-full h-full md:h-[70%] relative lg:-mt-10 rounded-lg">
+                    <div class="w-full h-full md:h-full absolute z-1 bg-black rounded-lg"><video
+                            class="w-full h-full md:h-full" src="./assets/video2.mp4" autoplay loop muted></video></div>
+                    <div
+                        class="w-full h-full md:h-full absolute z-2 hover:opacity-0 transition-opacity rounded-lg overflow-hidden">
                         <img class="w-full h-full md:h-full" src="./assets/special2.jpg" alt="">
                     </div>
                     <div class="absolute max-md:bottom-2 bottom-3 left-3 text-white font-extrabold w-full z-3 ">
-                        <p class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-yellow-400"></i> Dhaka</p>
+                        <p class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-yellow-400"></i>
+                            Dhaka</p>
                     </div>
                 </div>
-                <div class="w-full h-full md:h-[70%] relative"> 
-                    <div class="w-full h-full md:h-full absolute z-1 bg-black"><video class="w-full h-full md:h-full" src="./assets/video3.mov" autoplay loop muted></video></div>
-                    <div class="w-full h-full md:h-full absolute z-2 hover:opacity-0 transition-opacity">
+                <div class="w-full h-full md:h-[70%] relative rounded-lg">
+                    <div class="w-full h-full md:h-full absolute z-1 bg-black rounded-lg"><video
+                            class="w-full h-full md:h-full" src="./assets/video3.mp4" autoplay loop muted></video></div>
+                    <div
+                        class="w-full h-full md:h-full absolute z-2 hover:opacity-0 transition-opacity rounded-lg overflow-hidden">
                         <img class="w-full h-full md:h-full" src="./assets/special3.jpg" alt="">
                     </div>
                     <div class="absolute max-md:bottom-2 bottom-3 left-3 text-white font-extrabold w-full z-3">
-                        <p class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-yellow-400"></i> Khulna</p>
+                        <p class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-yellow-400"></i>
+                            Khulna</p>
                     </div>
                 </div>
-                <div class="w-full h-full md:h-[70%] relative"> 
-                    <div class="w-full h-full md:h-full absolute z-1 bg-black"><video class="w-full h-full md:h-full" src="./assets/video4.mp4" autoplay loop muted></video></div>
-                    <div class="w-full h-full md:h-full absolute z-2 hover:opacity-0 transition-opacity">
+                <div class="w-full h-full md:h-[70%] relative lg:-mt-10 rounded-lg">
+                    <div class="w-full h-full md:h-full absolute z-1 bg-black rounded-lg"><video
+                            class="w-full h-full md:h-full" src="./assets/video4.mp4" autoplay loop muted></video></div>
+                    <div
+                        class="w-full h-full md:h-full absolute z-2 hover:opacity-0 transition-opacity rounded-lg overflow-hidden">
                         <img class="w-full h-full md:h-full" src="./assets/special4.jpg" alt="">
                     </div>
                     <div class="absolute max-md:bottom-2 bottom-3 left-3 text-white font-extrabold w-full z-3">
-                        <p class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-yellow-400"></i> Rajshahi</p>
+                        <p class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-yellow-400"></i>
+                            Rajshahi</p>
                     </div>
                 </div>
             </div>
+            <button class="mx-auto border-none max-sm:w-[80%] max-sm:gap-5 px-3 py-1 rounded-full flex justify-center items-center 
+                           gap-3 bg-btnLight text-sm font-extrabold">View Details <i
+                    class="fa-solid fa-arrow-right -rotate-45 bg-btn rounded-full p-2 text-black"></i>
+            </button>
         </section>
         <section class="w-[100%] mx-auto py-9 bg-[url('./assets/bg.jpg')] bg-cover">
             <div class="w-[90%] mx-auto space-y-5">
@@ -295,6 +311,30 @@
             </div>
         </section>
     </main>
+    <footer class="w-full sm:h-[90vh] lg:h-[80vh] mx-auto py-9 space-y-5 bg-black">
+        <div class="w-[90%] sm:h-full mx-auto flex flex-col justify-between items-center max-sm:gap-5">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-arrow-right -rotate-45 
+                      bg-btn rounded-full p-2 text-black"></i>
+                <p class="font-extrabold text-lg text-white">Rinterio</p>
+            </div>
+            <p class="text-sm text-gray-300 text-center">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered
+                wood, sleek metal accents.</p>
+            <div class="w-full">
+                <ul class="text-gray-200 flex flex-col sm:flex-row sm:justify-between lg:justify-evenly items-center gap-4">
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>Portfolio</li>
+                    <li>Blog</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <button class="border-none px-3 py-1 rounded-full flex items-center 
+                                    gap-3 bg-btn text-sm font-extrabold">Book Consult <i
+                                class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-full p-2 text-white"></i>
+            </button>
+        </div>
+    </footer>
 </body>
 
 </html>
